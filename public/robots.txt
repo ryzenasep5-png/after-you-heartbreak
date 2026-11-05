@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://after-you-heartbreak.netlify.app/sitemap.xml

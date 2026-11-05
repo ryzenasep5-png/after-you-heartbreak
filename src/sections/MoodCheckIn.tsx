@@ -49,13 +49,14 @@ export default function MoodCheckIn() {
           ))}
         </div>
 
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           {active ? (
             <motion.div
-              initial={{ opacity: 0, y: 22, height: 0 }}
-              animate={{ opacity: 1, y: 0, height: 'auto' }}
-              exit={{ opacity: 0, y: 10, height: 0 }}
-              transition={{ duration: 0.45, ease: 'easeOut' }}
+              key={active.id}
+              initial={{ opacity: 0, y: 22, height: 0, filter: 'blur(6px)' }}
+              animate={{ opacity: 1, y: 0, height: 'auto', filter: 'blur(0px)' }}
+              exit={{ opacity: 0, y: -10, height: 0, filter: 'blur(6px)' }}
+              transition={{ duration: 0.5, ease: 'easeInOut' }}
               className="overflow-hidden"
             >
               <div className="paper mx-auto mt-10 max-w-3xl rounded-3xl p-7 sm:p-10">

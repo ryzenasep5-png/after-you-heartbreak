@@ -18,6 +18,9 @@ export default function Footer() {
           <Heart size={12} className="fill-maroon text-maroon" aria-label="cinta" />
           untuk hati yang masih belajar mengikhlaskan.
         </p>
+        <p className="mt-4 text-[11px] tracking-[0.28em] text-muted/70">
+          By: Ryzen
+        </p>
         <p className="mt-3 text-[11px] text-muted/60">
           AFTER YOU bukan pengganti bantuan profesional. Jika kamu butuh bantuan, jangan ragu
           menghubungi layanan kesehatan jiwa terdekat.

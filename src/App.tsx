@@ -1,3 +1,4 @@
+import IntroOverlay from './components/IntroOverlay'
 import MiniPlayer from './components/MiniPlayer'
 import Navbar from './components/Navbar'
 import PlayerProvider from './context/PlayerProvider'
@@ -13,6 +14,7 @@ import Surat from './sections/Surat'
 function App() {
   return (
     <PlayerProvider>
+      <IntroOverlay />
       <Navbar />
       <main>
         <Hero />
